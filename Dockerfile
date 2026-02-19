@@ -15,10 +15,10 @@ RUN apt-get update && \
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
 
-RUN curl -O https://downloads.apache.org/tomcat/tomcat-8/v8.5.84/bin/apache-tomcat-8.5.84.tar.gz
+RUN curl -O https://downloads.apache.org/tomcat/tomcat-9/v9.0.115/bin/apache-tomcat-9.0.115.tar.gz
 
 RUN tar zxvf apache*.tar.gz
-RUN mv apache-tomcat-8.5.84/* /opt/tomcat/.
+RUN mv apache-tomcat-9.0.115/* /opt/tomcat/.
 
 WORKDIR /opt/tomcat/webapps
 RUN curl -O -L https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
